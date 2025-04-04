@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.corporation.MainController">
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #2A3F54; -fx-padding: 10;">
+
+            <Label text="Информационная система 'Корпорация'" style="-fx-text-fill: white; -fx-font-size: 16"/>
+
+        </HBox>
+    </top>
+
+    <left>
+        <VBox style="-fx-background-color: #F8F9FA; -fx-padding: 20; -fx-spacing: 20;" minWidth="200">
+            <Button text="Все сотрудники" onAction="#showAllEmployees" style="-fx-font-size: 14;" maxWidth="Infinity"/>
+            <Button text="Добавить сотрудника" onAction="#showEmployeeForm" style="-fx-font-size: 14;"
+                    maxWidth="Infinity"/>
+            <Button text="Поиск по фамилии" onAction="#showSearchByLastName" style="-fx-font-size: 14;"
+                    maxWidth="Infinity"/>
+            <Button text="Поиск по возрасту" onAction="#showSearchByAge" style="-fx-font-size: 14;"
+                    maxWidth="Infinity"/>
+            <Button text="Поиск по букве" onAction="#showSearchByInitial" style="-fx-font-size: 14;"
+                    maxWidth="Infinity"/>
+            <Button text="Экспорт в файл" onAction="#showExportDialog" style="-fx-font-size: 14;" maxWidth="Infinity"/>
+
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="contentPane" style="-fx-padding: 10;" />
+    </center>
+</BorderPane>
