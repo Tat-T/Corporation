@@ -22,7 +22,7 @@
     <left>
         <VBox style="-fx-background-color: #F8F9FA; -fx-padding: 20; -fx-spacing: 20;" minWidth="200">
             <Button text="Все сотрудники" onAction="#showAllEmployees" style="-fx-font-size: 14;" maxWidth="Infinity"/>
-            <Button text="Добавить сотрудника" onAction="#showEmployeeForm" style="-fx-font-size: 14;"
+            <Button text="Добавить сотрудника" onAction="#showAddEmployeeForm" style="-fx-font-size: 14;"
                     maxWidth="Infinity"/>
             <Button text="Поиск по фамилии" onAction="#showSearchByLastName" style="-fx-font-size: 14;"
                     maxWidth="Infinity"/>

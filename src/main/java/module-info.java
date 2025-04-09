@@ -8,5 +8,6 @@ module org.example.corporation {
     requires java.naming;
 
     opens org.example.corporation to javafx.fxml;
+    opens org.example.corporation.controllers to javafx.fxml;
     exports org.example.corporation;
 }
