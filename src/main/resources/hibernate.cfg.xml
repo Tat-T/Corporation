@@ -5,7 +5,9 @@
     <session-factory>
 
         <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=Corporation_db;encrypt=true;trustServerCertificate=true;</property>
+        <property name="connection.url">
+            jdbc:sqlserver://localhost:1433;databaseName=Corporation_db;encrypt=true;trustServerCertificate=true;
+        </property>
         <property name="connection.username"></property>
         <property name="connection.password"></property>
 
@@ -15,7 +17,10 @@
         <property name="current_session_context_class">thread</property>
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
-        <mapping class="com.example.corporation.Employee" />
+        
+        <mapping class="com.example.corporation.Employee"/>
+        <mapping class="com.example.corporation.Position"/>
+        <mapping class="com.example.corporation.Department"/>
 
     </session-factory>
 </hibernate-configuration>
