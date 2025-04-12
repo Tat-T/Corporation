@@ -3,7 +3,7 @@ package org.example.corporation.entities;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.Instant;
 
 @Entity
@@ -35,4 +35,18 @@ public class Employee {
     @UpdateTimestamp
     private  Instant lastUpdatedOn;
 
+    public Employee (String userName, int age){
+        this.userName = userName;
+        this.age = age;
+    }
+
+    public Employee() {}
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }

@@ -1,6 +1,6 @@
 package org.example.corporation.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
